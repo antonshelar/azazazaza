@@ -49,6 +49,8 @@ int main(int argc, char **argv){
 	glEnd();
 	glFlush();
 
+	printf("OK\n");
+
 	glutMainLoop();
 
 
