@@ -22,9 +22,13 @@ struct pool{
 
 };
 
+#define		free_pool(pool) 	__free_pool(pool); \
+								pool = NULL;
+
 struct pool *create_pool();
 int add_to_pool(struct pool *pool, void *ptr);
-void free_pool(struct pool *pool);
+void __free_pool(struct pool *pool);
+
 
 
 #endif /* POOL_H_ */

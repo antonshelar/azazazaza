@@ -52,7 +52,7 @@ int add_to_pool(struct pool *pool, void *ptr){
 
 }
 
-void free_pool(struct pool *pool){
+void __free_pool(struct pool *pool){
 
 	if(!pool)
 		return;
